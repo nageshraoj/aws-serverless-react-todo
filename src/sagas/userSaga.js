@@ -6,6 +6,6 @@ export function* loginMainSaga() {
 }
 export function* authenticateUser(user) {
   if (!user?.data) return
-//   console.log(user.data)
+  //   console.log(user.data)
   yield put(LoginSuccessed({ token: user.data }))
 }

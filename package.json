@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
+    "@material-ui/data-grid": "^4.0.0-alpha.37",
     "amazon-cognito-identity-js": "^5.2.0",
+    "axios": "^0.23.0",
     "cra-template": "1.1.2",
     "dotenv": "^10.0.0",
     "react": "^17.0.2",

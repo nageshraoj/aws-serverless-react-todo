@@ -5,10 +5,9 @@ export const LoginRequested = (user) => {
   }
 }
 
-export const LoginSuccessed = (token) => {
+export const LoginSuccessed = () => {
   return {
     type: 'LOG_IN_SUCCESS',
-    payload: token,
   }
 }
 
@@ -24,15 +23,21 @@ export const Logout = () => {
   }
 }
 
+export const GetAllTodos = (todos) => {
+  return {
+    type: 'GET_TODOS',
+    payload: todos,
+  }
+}
 
 export const LoginType = () => {
   return {
-    type:'LOGIN'
+    type: 'LOGIN',
   }
 }
 
 export const RegisterType = () => {
   return {
-    type:'REGISTER'
+    type: 'REGISTER',
   }
 }

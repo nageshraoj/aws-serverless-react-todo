@@ -49,7 +49,6 @@ const LoginComponent = () => {
       onSuccess: function (result) {
         var token = result.getAccessToken().getJwtToken();
         // console.log(token)
-        localStorage.setItem("token", token);
         dispatch(LoginRequested(token));
         return token;
       },
