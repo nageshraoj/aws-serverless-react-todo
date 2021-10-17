@@ -19,6 +19,8 @@ const HeaderComponent = () => {
 
   const addTodo = () => {
     dispatch(addTodoSelected({ newTodo: true }))
+    history.goBack()
+    setIndex(1)
   }
 
   const headerStyle = makeStyles((theme) => ({

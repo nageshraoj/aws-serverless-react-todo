@@ -13,7 +13,6 @@ const AddTodoPage = () => {
 
   const dispatch = useDispatch()
   const newTodo = () => {
-    history.push('/todo')
     dispatch(addTodoSelected({ newTodo: false }))
   }
 
