@@ -35,13 +35,13 @@ const TodoPage = () => {
         const editTodo = (e) => {
           console.log('Edit below record')
           console.log(params.row.id)
-          dispatch(updateTodoSelected({ todo: params, updateTodo: true }))
+          dispatch(updateTodoSelected({ todo: params.row, updateTodo: true }))
         }
 
         const deleteTodo = (e) => {
           console.log('Delete below record')
           console.log(params)
-          dispatch(removeTodoSelected({ todo: params, removeTodo: true }))
+          dispatch(removeTodoSelected({ todo: params.row, removeTodo: true }))
         }
 
         return (
