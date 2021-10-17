@@ -20,7 +20,7 @@ const loginReducer = (state = initialState, action) => {
       return {
         isLoading: false,
         authen: true,
-        // token: action.payload.token,
+        user: action.payload.user,
       }
     }
     case 'LOG_IN_FAILURE': {
@@ -58,8 +58,22 @@ const todosReducer = (state = {}, action) => {
   }
 }
 
+const todoChangeReducer = (state = {}, action) => {
+  switch (action.type) {
+    case 'ADD_SELECT':
+      return action.payload
+    case 'REMOVE_SELECT':
+      return action.payload
+    case 'UPDATE_SELECT':
+      return action.payload
+    default:
+      return state
+  }
+}
+
 export default combineReducers({
   isUserLogin: loginReducer,
   loginType: logInType,
   todos: todosReducer,
+  todoAction: todoChangeReducer,
 })
