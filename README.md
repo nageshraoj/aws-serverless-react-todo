@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Add .env file and add below envirnment variables
+
+REACT_APP_USERPOOLID= //your AWS userpool id
+REACT_APP_CLIENTID= // your client id
+REACT_APP_TODO= // your api url
+
 ## Available Scripts
 
 In the project directory, you can run:
